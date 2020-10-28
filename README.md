@@ -1,5 +1,14 @@
 # Javascript Array Methods: Filter, Map and Reduce
 
+## Base Array used in the examples
+```javascript
+const pets = [
+    { type: 'dog', name: 'hex', age: 15, weight: 14 },
+    { type: 'cat', name: 'bolt', age: 2, weight: 5 },
+    { type: 'fish',name: 'nemo', age: 1, weight: 0.01 }
+]
+```
+
 ## Filter
 The filter() method creates an array filled with all array elements that pass a test (provided as a function).
 
