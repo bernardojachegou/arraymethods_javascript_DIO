@@ -42,12 +42,17 @@ const pets = [
 const returnNames = (pet) => pet.name;
 const petNames = pets.map((pet) => returnNames(pet));
 
-const simplePetNames = pets.map((pet) => {
-    return pet.age;
+// Return more than one property
+
+const simplePetNamesAndAge = pets.map((pet) => {
+    return {
+        name: pet.name,
+        age: pet.age
+    }
 });
 
 // forEach doesn't return a new array, we must push the selected items to the same array;
 
 console.log(pets);
 console.log(petNames);
-console.log(simplePetNames);
+console.log(simplePetNamesAndAge);
